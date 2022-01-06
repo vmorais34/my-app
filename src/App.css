@@ -1,3 +1,69 @@
+/*LATO*/
+@font-face {
+  font-family: "Lato R";
+  src: url("../public/fonts/Lato-Regular.woff2") format("woff2")
+}
+@font-face {
+  font-family: "Lato L";
+  src: url("../public/fonts/Lato-Light.woff2") format("woff2")
+}
+@font-face {
+  font-family: "Lato B";
+  src: url("../public/fonts/Lato-Bold.woff2") format("woff2")
+}
+@font-face {
+  font-family: "Lato XB";
+  src: url("../public/fonts/Lato-Black.woff2") format("woff2")
+}
+@font-face {
+  font-family: "Lato T";
+  src: url("../public/fonts/Lato-Thin.woff2") format("woff2")
+}
+
+/*NUNITO*/
+@font-face {
+  font-family: "Nunito B";
+  src: url("../public/fonts/Nunito-Bold.woff2") format("woff2")
+}
+@font-face {
+  font-family: "Nunito L";
+  src: url("../public/fonts/Nunito-Light.woff2") format("woff2")
+}
+@font-face {
+  font-family: "Nunito M";
+  src: url("../public/fonts/Nunito-Medium.woff2") format("woff2")
+}
+
+/*RESET*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Lato R";
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
 .App {
   text-align: center;
 }
@@ -8,9 +74,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  /* .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+  } */
 }
 
 .App-header {

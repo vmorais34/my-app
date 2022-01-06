@@ -1,0 +1,105 @@
+.newsleeter_box {
+    background-color: #f2f2f2;
+    padding: 24px 0 36px;
+}
+.newsleeter_box p {
+    font-family: "Lato R";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #333333;
+    padding-bottom: 16px;
+}
+.newsleeter_box input:first-child {
+    margin-right: 8px;
+}
+.newsleeter_box input {
+    border: none;
+    padding: 17px 16px;
+    width: 280px;
+    height: 48px;
+}
+.newsleeter_box input:focus-visible {
+    outline: none;
+}
+.newsleeter_box button {
+    margin-left: 8px;
+    padding: 17px 16px;
+    border-radius: 5px;
+    background-color: #000;
+    border: none;
+    color: #FFF;    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+.footer_box {
+    background-color: #000;
+}
+
+.footer_box section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_box .local {
+    color: #FFF;
+    text-align: left;
+    font-family: "Nunito L";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 12px;
+}
+
+.footer_box .local h3 {
+    font-family: "Nunito B";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    padding-bottom: 16px;
+}
+
+.footer_box .local h3::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 12px;
+    width: 50px;
+    height: 4px;
+    background-color: #FFF;
+}
+
+.footer_box .local p {padding-top: 16px;}
+
+.footer_box .contact button:first-child{
+    margin-bottom: 25px;
+}
+.footer_box .contact button {
+    padding: 20px;
+    width: 195px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.footer_box .poweredBy {
+    text-align: left;
+    color: #FFF;
+    font-weight: normal;
+    font-size: 10.6017px;
+    line-height: 14px;
+    gap: 25px;
+}
