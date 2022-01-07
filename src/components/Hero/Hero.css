@@ -110,6 +110,78 @@
     height: 5px;
     background-color: #C0C0C0;
 }
+.shelf{display: flex;justify-content: space-between;flex-flow: row wrap;margin-bottom: 50px;}
+ul,li{list-style: none;padding: 0;}
+.shelf li {max-width: max-content;}
+.shelf h3 {
+    font-family: "Nunito B";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #7A7A7A;
+}
+.shelf .stars,
+.shelf .product-image {
+    margin: 0 auto;
+}
+.shelf .priceInfo span {
+    display: block;
+}
+.shelf .priceInfo span:first-child{ 
+    font-family: "Nunito L";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #7A7A7A;
+}
+.shelf .priceInfo span:last-child{ 
+    margin-top: 2px;
+    margin-bottom: 4px;
+    font-family: "Nunito B";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+}
+.shelf .installments {
+    font-family: "Nunito L";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #7A7A7A;
+}
+.shelf li button {opacity: 0;}
+.shelf li:hover button {
+    opacity: 1;
+    display: flex;
+    justify-content: center;align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 125px;
+    height: 32px;
+    margin: 0 auto;
+    background: #000000;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 7px;
+
+    font-family: "Nunito B";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 @media screen and (max-width:768px) {    
     .slick-dots li button:before {top: -30px;}

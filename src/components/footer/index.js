@@ -11,6 +11,8 @@ import "./Footer.css"
 //         document.getElementById("formulario").submit();
 //     }   
 // }
+
+
 function NewsletterDefault(props) {
     return <>
             <section className="newsleeter_box-sucess">
@@ -23,11 +25,11 @@ function NewsletterDefault(props) {
                 </article>
             </section>
     </> 
-  }
+}
   
 function NewsletterSend(props) {
 return <>
-         <section className="newsleeter_box">
+         <section className="newsleeter_box" id="news">
                 <p>
                     Participe das nossas news com promoções e novidades! 
                 </p>
@@ -36,23 +38,51 @@ return <>
                     </input>
                     <input placeholder="Digite seu email" id="newsletter_email">
                     </input>
-                    <input className="send-newsletter" id="btn-send" type="button" name="send-newsletter" value="Eu quero!"></input>
+                    <input className="send-newsletter" id="btn-send" type="button" name="send-newsletter" value="Eu quero!" onClick={SendNewsletter}></input>
                 </article>
             </section>;
     </> 
 }
-function SendNewsletter(props) {
-const newsletterSend = props.newsletterSend;
-if (newsletterSend) {
-    return <NewsletterDefault />;
-}
-return <NewsletterSend />;
+function SendNewsletter() {
+    var btnSend = document.getElementById("btn-send");
+    
+    var newsletter_name = document.getElementById("newsletter_name").value;
+    var newsletter_email = document.getElementById("newsletter_email").value;
+    if(newsletter_name === '' || newsletter_email === '') {
+        alert("Preencha todos os campos!");
+    }
+    else {
+        var raw = "{\n    \"email\": "+ newsletter_email +",\n    \"name\": "+ newsletter_name +" \n}";
+        var requestOptions = {
+            method: 'POST',
+            body: raw,
+        };
+        
+        fetch("https://corebiz-test.herokuapp.com/api/v1/newsletter", requestOptions)
+            .then(response => response.json())
+            .then(result => {
+                if(result.status == 'error'){
+                    document.getElementById('news').innerHTML = '<section className="newsleeter_box-sucess"> ' +
+                    '<p>' +
+                        '<bSeu e-mail foi cadastrado com sucesso!</b><br/>' +
+                        'A partir de agora você receberá as novidade e ofertas exclusivas. ' +
+                    '</p>' +
+                    '<article>' +
+                        '<input id="btn-return" type="button" name="return-newsletter" value="Cadastrar novo e-mail"></input>' +
+                    '</article>' +
+                '</section>';
+                }
+            })
+            .catch(error => console.log('error', error));
+    }  
+    
+    
 }
 
 function Footer() {
     return (
         <>
-            <SendNewsletter newsletterSend={true} />,
+            <NewsletterSend />,
             <footer>
                 <div className="footer_box">
                     <section className="container flex">

@@ -16,3 +16,7 @@ Here is my test send to the team of corebiz, develop in React using the most rec
     2. Updating the README.MD
 4. Development
 
+### Run the project
+
+- To run the project, go at the folder my-app and run the command in the terminal: 
+ **npm start**
