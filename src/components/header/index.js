@@ -5,6 +5,11 @@ function Header() {
     return (
         <>
             <header className="flex container">
+                <div className="menu-mobile">
+                    <button>
+                            <img src="./images/icn-hamburguer.svg" alt="menu Mobile" width={22} height={15}/>
+                    </button>
+                </div>
                 <h1>
                     <picture>
                         <img src="./images/logo-corebiz-preto-cinza.png" alt="Logo corebiz"/> 
@@ -32,6 +37,14 @@ function Header() {
                     </div>
                 </div>
             </header>
+            <section className="search_box-mobile flex">
+                <input 
+                    className="input_group"
+                    placeholder="O que está procurando?"
+                    >
+                </input>
+                <img className="lupa" src="./images/icn-lupa.svg" alt="Lupa busca" width={18} height={18}/>
+            </section>
         </>
     )
 }

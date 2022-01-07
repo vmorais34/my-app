@@ -1,6 +1,16 @@
 import React from 'react'
 import "./Footer.css"
 
+// function envia() {
+//     var newsletter_name = document.getElementById("newsletter_name").value;
+//     var newsletter_email = document.getElementById("newsletter_email").value;
+//     if(newsletter_name === '' || newsletter_email === '') {
+//         alert("Preencha todos os campos!");
+//     }
+//     else {
+//         document.getElementById("formulario").submit();
+//     }   
+// }
 function Footer() {
     return (
         <>
@@ -9,12 +19,13 @@ function Footer() {
                     Participe das nossas news com promoções e novidades! 
                 </p>
                 <article>
-                    <input placeholder="Digite seu nome">
+                    <input placeholder="Digite seu nome" id="newsletter_name">
                     
                     </input>
-                    <input placeholder="Digite seu email">
+                    <input placeholder="Digite seu email" id="newsletter_email">
                     
                     </input>
+                    {/* <input id="btn" type="button" onclick={envia()} name="go" value="Eu quero!"></input> */}
                     <button>
                         Eu quero!
                     </button>
