@@ -23,7 +23,7 @@
 .newsleeter_box input:focus-visible {
     outline: none;
 }
-.newsleeter_box button {
+.newsleeter_box .send-newsletter {
     margin-left: 8px;
     padding: 17px 16px;
     border-radius: 5px;
@@ -35,6 +35,38 @@
     line-height: 14px;
     cursor: pointer;
 }
+.newsleeter_box-sucess {display: block;}
+.newsleeter_box-sucess p{
+    font-family: "Lato L";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    padding: 0 16px;
+}
+.newsleeter_box-sucess p b{
+    font-family: "Lato B";font-weight: 700;}
+
+.newsleeter_box-sucess article input {
+    font-family: "Lato B";font-weight: 700;
+    width: 100%;
+    max-width: 315px;
+    height: 48px;
+    margin-top: 8px;
+    padding: 17px 16px;
+    border-radius: 5px;
+    background-color: #000;
+    border: none;
+    color: #FFF;    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
 .footer_box {
     background-color: #000;
 }

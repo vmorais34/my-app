@@ -75,7 +75,8 @@ header {
     color: #FFFFFF;
 }
 
-.menu-mobile{display: none;}
+.menu-mobile,
+.search_box-mobile{display: none;}
 
 /*MOBILE*/
 @media screen and (max-width:768px) {
@@ -117,6 +118,7 @@ header {
     }
 
     .search_box-mobile {
+        display: flex;
         position: relative;
         justify-content: center;
         padding-bottom: 11px;

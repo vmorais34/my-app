@@ -6,18 +6,27 @@ function Hero() {
         <>
             <div className="slick">
                 <picture>
-                    <img src="./images/banner.png" alt="Logo corebiz"/> 
+                    <source media="(max-width: 768px)" srcSet="./images/Banner-mobile.png"/>
+                    <source media="(min-width: 800px)" srcSet="./images/Banner.png"/>
+                    <img src="./images/Banner.png" alt="banner desktop"/>
                 </picture>
                 <picture>
-                    <img src="./images/banner.png" alt="Logo corebiz"/> 
+                    <source media="(max-width: 768px)" srcSet="./images/Banner-mobile.png"/>
+                    <source media="(min-width: 800px)" srcSet="./images/Banner.png"/>
+                    <img src="./images/Banner.png" alt="banner desktop"/>
                 </picture>
                 <picture>
-                    <img src="./images/banner - 2.png" alt="Logo corebiz"/> 
+                    <source media="(max-width: 768px)" srcSet="./images/Banner-mobile.png"/>
+                    <source media="(min-width: 800px)" srcSet="./images/Banner.png"/>
+                    <img src="./images/Banner.png" alt="banner desktop"/>
                 </picture>
                 <picture>
-                    <img src="./images/banner - 3.png" alt="Logo corebiz"/> 
+                    <source media="(max-width: 768px)" srcSet="./images/Banner-mobile.png"/>
+                    <source media="(min-width: 800px)" srcSet="./images/Banner.png"/>
+                    <img src="./images/Banner.png" alt="banner desktop"/>
                 </picture>
             </div>
+
             <section className="container">
                 <article>
                     <h2 className="title-shelf">
